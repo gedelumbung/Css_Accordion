@@ -1,0 +1,60 @@
+body{
+	font-size:12px;
+	font-family:Arial;
+}
+.menu-accordion {
+ 	background: #ccc;
+ 	border: 1px dashed #999;	
+	padding: 5px;
+	width: 400px;
+	margin: 0px auto;
+}
+.menu-accordion .sub {
+ 	border: 1px dashed #999;
+	padding: 10px;
+	background: #fff;
+	margin:5px;
+}
+.menu-accordion ul {
+ 	list-style:square;
+}
+.menu-accordion li a {
+ 	text-decoration: none;
+	color:red;
+	font-weight: normal;
+}
+.menu-accordion li a:hover {
+ 	text-decoration: underline;
+	color:red;
+	font-weight: normal;
+}
+.menu-accordion h1 {
+	margin:0px ;
+	font-size:14px;
+}
+.menu-accordion h1 a {
+	display: block;
+	font-weight: normal;
+	color:red;
+	text-decoration: none;
+	font-size:13	px;
+	margin:0px ;
+}
+
+.menu-accordion h1 a:hover {
+	text-decoration: underline;
+}
+ 
+.menu-accordion h1 + div {
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: height 0.5s ease-in;
+}
+.menu-accordion :target h1 a {
+	text-decoration: none;
+	font-weight: bold;
+}
+.menu-accordion :target h1 + div {
+	height: 25%;
+}
+
